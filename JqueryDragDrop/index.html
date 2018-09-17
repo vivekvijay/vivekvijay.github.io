@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./draganddrop.js"></script>
+    
+</head>
+
+<body>
+
+    <h1>Group-1</h1>
+    <ul class="demo">
+        <li>Item 1</li>
+        <li>Item 2
+            <ul>
+                <li>Item 2.1</li>
+                <li>Item 2.2
+                    <ul>
+                        <li>Item 2.2.1</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Item 3
+            <ul>
+                <li>Item 3.1</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h1>Group-2</h1>
+
+    <ul class="demo">
+        <li>Item 1</li>
+        <li>Item 2
+            <ul>
+                <li>Item 2.1</li>
+                <li>Item 2.2
+                    <ul>
+                        <li>Item 2.2.1</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Item 3
+            <ul>
+                <li>Item 3.1</li>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+        $(function () {
+            //grouped lists
+        $('ul').sortable({
+          group: true
+        });
+
+        });
+    </script>
+</body>
+
+</html>
