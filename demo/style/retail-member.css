@@ -3,8 +3,7 @@
     margin: 50px auto;
 }
 .retail-member-container .content .block{
-    width: 50%;
-    float: left;
+    width: 100%;   
 }
 .retail-member-container .content .left-side h1{
     font-weight: 700;
