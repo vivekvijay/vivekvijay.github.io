@@ -1,0 +1,131 @@
+@media screen and (max-width: 1200px) {
+    .faculty.content .block-container .block{
+        display: block;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        border-right: none;
+        border-bottom: 1px solid #fcb913;
+    }
+    .faculty.content .block-container .block .details{
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .retail-member-container .content .block{
+        width: 100%;   
+        float: none;
+    }
+    .header ul{
+        position: absolute;
+        right: 25px;
+        top: 60px;
+        padding: 35px 0;
+        transition: opacity 0.2s ease-in;
+        opacity: 0;
+        background: #fcb913;
+        box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.5);
+    }
+    .menu-icon{
+        opacity: 1;
+    }
+    .header ul.show{
+        z-index: 100;
+        opacity: 1;
+    }
+    .header ul li{
+        /* padding: 10px 20px; */
+        text-align: left;
+        display: block;
+        border-bottom: 1px solid;
+    }
+    .header ul li a{
+        padding: 10px 20px;
+    }
+    .header ul li:hover{
+       background: black;
+    }
+    .header ul li:hover .menu-list {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .header ul li.mob-menu{
+        /* padding: 10px 40px; */
+        display: block;
+    }
+    .header ul li.mob-menu a{
+        padding: 10px 40px;
+    }
+    /* .header ul li .menu-list {
+        position: static;
+        text-align: left;
+        border: none;
+        visibility: visible;
+        opacity: 1;
+        margin-top: 10px; 
+    }
+    .header ul li .menu-list .sub-menu {
+        padding: 10px 20px;
+        border-bottom: none;
+        background: #fcb913;
+    } */
+}
+
+@media screen and (max-width: 875px) {
+    body{
+        padding-bottom: 0;
+    }
+    .footer {
+       position: static;
+       height: auto;
+    }
+    .footer .v-middle {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .footer .v-middle .middle-block{
+        display: block;
+        padding: 0px;
+    }
+    .footer .v-middle .side-block{
+        padding: 25px 0;
+        display: block;
+        text-align: center;
+    }
+    .footer .v-middle .side-block:last-child{
+        text-align: center;
+    }
+    .form-container .block{
+        width: 100%;
+        float: none;
+    }
+    .desktop-slide{
+        display: block;
+    }
+    .slide.mob-slide{
+        display: none;
+    }
+  }
+
+@media screen and (max-width : 768px) {
+    .card-row .card {
+        width: 33%;
+    }
+    .desktop-slide{
+        display: none;
+    }
+    .slide.mob-slide{
+        display: block;
+    }
+}
+@media screen and (max-width : 450px) {
+    .card-row .card {
+        width: 100%;
+    }
+}
+
+
+
+
+
+

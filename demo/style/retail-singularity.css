@@ -1,0 +1,44 @@
+.retail-singularity-container {
+    width: 100%;
+}
+
+.title {
+    color: #fcb913;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    margin: 50px 0;
+}
+
+.card-container {
+   background-color: #000;
+}
+
+.card-row {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+    display: table;
+
+}
+
+.card-row .card {
+    display: inline-block;
+    color: #4e4e50;
+    width: 25%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 20px 0;
+    height: auto;
+    padding: 3% 0;
+}
+
+.card  a {
+    cursor: pointer;
+}
+
+.card img {
+    width: 120px;
+    height: auto;
+}
+

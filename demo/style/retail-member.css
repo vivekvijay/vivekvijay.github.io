@@ -1,0 +1,29 @@
+.retail-member-container .content{
+    max-width: 1000px;
+    margin: 50px auto;
+}
+.retail-member-container .content .block{
+    width: 50%;
+    float: left;
+}
+.retail-member-container .content .left-side h1{
+    font-weight: 700;
+    font-size: 45px;
+    color: #fcb913;
+    text-align: center;
+}
+
+.retail-member-container .content::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.retail-member-container .content .right-side .content-list{
+    padding: 0 15px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+}
+.retail-image-container img {
+    width: 100%;
+} 

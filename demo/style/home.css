@@ -1,0 +1,94 @@
+.home-page.content{
+    margin: 50px auto;
+}
+.home-page.content h1{
+    font-size: 100px;
+    text-align: center;
+}
+.home-page.content h2{
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    margin: 0 0 8px;
+}
+.home-page .what-we-do{
+    max-width: 565px;
+    margin: 0 auto;
+    text-align: center;
+}
+.home-page .what-we-do p{
+    margin: 0;
+}
+
+.form-container{
+    background: #231f20;
+    color: #babbbd;
+    padding: 100px 0;
+}
+.form-container .content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.form-container .block{
+    width: 50%;
+    float: left;
+}
+.form-container .block:last-child{
+    float: right;
+    text-align: right;
+}
+.form-container .content::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.form-container h3{
+    background: #231f20;
+    color: #fcb913;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 55px;
+    margin: 0 0 30px 0;
+}
+.form-container .field-container
+{
+    margin-bottom: 10px;
+}
+.form-container .field-container input
+{
+    padding: 7px 10px;
+    margin-left: 5px;
+    width: 245px;
+    box-sizing: border-box;
+    background: #babbbd;
+    border:none;
+}
+.form-container button
+{
+    padding: 7px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background: #babbbd;
+    border:none;
+}
+
+.mob-slide.slide{
+    display: none;
+    height: 100%;
+    min-height: auto;
+    background: transparent;
+}
+.mob-slide img{
+    width: 100%;
+    height: auto;
+}
+.mob-slide ul{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+.mob-slide ol{
+    display: none;
+}
