@@ -39,7 +39,19 @@ body{
     padding-bottom: 0;
 }
 
-
+/* input {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font-family: Avenir;
+} */
 .header .container{
     text-align: right;
     position: relative;
@@ -61,6 +73,7 @@ body{
     padding: 35px 0;
     transition: opacity 0.2s ease-in;
     opacity: 0;
+    z-index: -1;
     background: #fcb913;
     box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.5);
 }
@@ -202,6 +215,8 @@ body{
 .footer .v-middle .middle-block{
     display: block;
     padding: 0px;
+    max-width: 360px;
+    margin: 0 auto;
 }
 
 .footer .v-middle .middle-block .sign-up{
@@ -210,9 +225,10 @@ body{
     font-size: 13px;;
 }
 .footer .v-middle .middle-block .fields input{
-    width: 310px;
+    width: calc(100% - 65px);
     padding: 8px;
     border: none;
+    box-sizing: border-box;
 }
 .footer .v-middle .middle-block .fields button{
     padding: 8px;

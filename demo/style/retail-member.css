@@ -7,7 +7,7 @@
 }
 .retail-member-container .content .left-side h1{
     font-weight: 700;
-    font-size: 45px;
+    font-size: 40px;
     color: #fcb913;
     text-align: center;
 }
@@ -22,6 +22,9 @@
     margin: 0;
     font-size: 14px;
     line-height: 18px;
+}
+.board_members_img{
+    display: none;
 }
 .retail-image-container img {
     width: 100%;

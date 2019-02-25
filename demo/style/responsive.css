@@ -1,57 +1,36 @@
-@media screen and (min-width: 1200px) {
-    .faculty.content .block-container .block{
-        display: table-cell;
-        padding: 0 15px;
-        position: relative;
-        border-right: 1px solid #fcb913;
-        border-bottom: none;
-    }
-    .faculty.content .block-container .block .details{
-        min-height: 110px;
-    }
-    .faculty.content .block-container .block .photo{
-        left: 15px;
+
+@media screen and (max-width : 430px) {
+    .footer .v-middle .side-block span.contact-us {
+        display: block;
+        margin: 10px 0 0;
     }
 }
-@media screen and (min-device-width: 950px) and (min-width: 950px) {
-    .retail-member-container .content .block{
-        width: 50%;
-        float: left;
+/* @media screen and (min-width : 450px) {
+    .card-row .card {
+        width: 100%;
     }
-    .header ul{
-        margin: 0;
-        position: static;
-        padding: 0;
-        opacity: 1;
-        background: transparent;
-        box-shadow: none;
+} */
+@media screen and  (min-width : 768px) {
+    .desktop-slide{
+        display: block;
     }
-    .menu-icon{
-        opacity: 0;
-        z-index: -1;
-    }
-    
-    .header ul li{
-        display: inline-block;
-        border-bottom: none;    
-    }
-    .header ul li a{
-        padding: 42px 30px;
-    }
-    .header ul li:hover{
-        background: transparent;
-     }
-     .header ul li:hover .menu-list{
-        opacity: 1;    
-        visibility: visible;
-    }
-    
-    .header ul li.mob-menu{
+    .slide.mob-slide{
         display: none;
     }
+    .retail-member-container .content .left-side h1{
+        font-size: 45px;
+    }
+    /* .form-container .field-container span{
+        display: block;
+        min-width: auto;
+        text-align: left;
+    } */
+    /* .form-container .field-container input{
+        display: block;
+        width: 100%;
+    } */
 }
-
-@media screen and (min-device-width: 875px) and  (min-width: 875px) {
+@media screen and  (min-width: 875px) {
     body{
         padding-bottom: 165px;
     }
@@ -113,6 +92,9 @@
         margin-left: 5px;
         width: 245px;
     }
+    .form-container .field-container input{
+        display: inline-block;
+    }
     .home-page.content h1{
         font-size: 100px;
     }
@@ -122,25 +104,77 @@
     .home-page .what-we-do{
         max-width: 565px;
     }
-    
-  }
-
-@media screen and (min-device-width: 768px) and   (min-width : 768px) {
     .card-row .card {
         width: 33%;
     }
-    .desktop-slide{
-        display: block;
+  }
+
+@media screen and (min-width: 950px) {
+    .retail-member-container .content .block{
+        width: 50%;
+        float: left;
     }
-    .slide.mob-slide{
+    .header ul{
+        margin: 0;
+        position: static;
+        padding: 0;
+        opacity: 1;
+        background: transparent;
+        box-shadow: none;
+    }
+    .menu-icon{
+        opacity: 0;
+        z-index: -1;
+    }
+    
+    .header ul li{
+        display: inline-block;
+        border-bottom: none;    
+    }
+    .header ul li a{
+        padding: 42px 30px;
+    }
+    .header ul li:hover{
+        background: transparent;
+     }
+     .header ul li:hover .menu-list{
+        opacity: 1;    
+        visibility: visible;
+    }
+    
+    .header ul li.mob-menu{
         display: none;
     }
-}
-@media screen and (min-width : 450px) {
+    .board_members_img{
+        display: block;
+    }
+    .board_members_img_mob{
+        display: none;
+    }
     .card-row .card {
-        width: 100%;
+        width: 25%;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .faculty.content .block-container .block{
+        display: table-cell;
+        padding: 0 15px;
+        position: relative;
+        border-right: 1px solid #fcb913;
+        border-bottom: none;
+    }
+    .faculty.content .block-container .block .details{
+        min-height: 110px;
+    }
+    .faculty.content .block-container .block .photo{
+        left: 15px;
+    }
+}
+
+
+
+
 
 
 
