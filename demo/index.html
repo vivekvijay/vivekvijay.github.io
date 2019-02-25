@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link type="text/css" rel="stylesheet" href="./style/common.css">
     <link type="text/css" rel="stylesheet" href="./style/home.css">
@@ -17,7 +18,7 @@
             <a class="logo">
                 <img src="images/retailsingularity_logo.png" />
             </a>
-            <img src="images/menu-icon.png" class="menu-icon"/>
+            <img src="images/menu-icon.png" class="menu-icon" />
             <ul class="menu-items">
                 <li><a href="index.html"><span>HOME</span></a></li>
                 <li>
@@ -59,9 +60,9 @@
         <div><img src='images/mob_slider_image3.jpg'></div>
       </div> -->
     <div class="slide mob-slide">
-        <img src="images/mob_slider_image1.jpg"/>
-        <img src="images/mob_slider_image2.jpg"/>
-        <img src="images/mob_slider_image3.jpg"/>
+        <img src="images/mob_slider_image1.jpg" />
+        <img src="images/mob_slider_image2.jpg" />
+        <img src="images/mob_slider_image3.jpg" />
     </div>
     <div class="home-page content">
         <h1>WHAT WE DO</h1>
@@ -76,6 +77,7 @@
         </div>
 
     </div>
+    <iframe width="100%" height="100%" src="https://youtu.be/WazxZx84kxM?autoplay=1&rel=0&controls=0&showinfo=0 frameborder=0 allow=autoplay; encrypted-media" allowFullScreen=true></iframe>
     <div class="form-container">
         <div class="content">
             <div class="block">
@@ -125,7 +127,7 @@
                 <div class="field-container">
                     <button>SUBMIT</button>
                 </div>
-                
+
 
             </div>
         </div>
@@ -155,10 +157,33 @@
         integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
         crossorigin="anonymous"></script> -->
     <script src="scripts/jquery.slide.js"></script>
-    <!-- <script src="scripts/slick.js"></script> -->
     <script src="scripts/initializer.js"></script>
     <script type="text/javascript">
-        
+
+        function setSliderHeight() {
+            $('.mob-slide').height($('.mob-slide img').height());
+        }
+        $(document).ready(function () {
+            setSliderHeight();
+            $(window).resize(function () {
+                setSliderHeight();
+            });
+            $('.desktop-slide').slide({
+                'slideSpeed': 3000,
+                'isHoverStop': false,
+                'isShowArrow': true,
+                'dotsEvent': 'mouseenter',
+                'isLoadAllImgs': true
+            });
+            $('.mob-slide').slide({
+                'slideSpeed': 2000,
+                'isHoverStop': false,
+                'isShowArrow': true,
+                'dotsEvent': 'mouseenter',
+                'isLoadAllImgs': true,
+                isImageTag: true
+            });
+        });
     </script>
 </body>
 
